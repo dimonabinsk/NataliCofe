@@ -1,0 +1,147 @@
+<footer class="footer wrapper">
+    <div class="animate animate__fadeInUp footer__conteiner">
+        <div class="footer__colum">
+            <h2 class="main-heading footer_h ">
+                Come to us!
+            </h2>
+                <p class="footer__item">
+                    <a class="footer__links" href="#">
+                        <img class="footer__icons" 
+                            width="15" 
+                            height="15" 
+                            src="img/icons/ico_time.svg" 
+                            alt="Time"
+                        >
+                        8.00-23.00
+                    </a>
+                    <a class="footer__links" href="#">
+                        <img class="footer__icons" 
+                            width="10" 
+                            height="15" 
+                            src="img/icons/ico-adress.svg" 
+                            alt="Adress"
+                        >
+                        9532 W Linebaugh Ave,Tampa
+                    </a>
+                    <a class="footer__links" href="tel:+12538675413">
+                        <img class="footer__icons" 
+                            width="10" 
+                            height="15" 
+                            src="img/icons/ico-phone.svg" 
+                            alt="Tel"
+                        >
+                        +1 253 867-54-13
+                    </a>
+                    <a class="footer__links" href="mailto:coffeeplanet@mail.com">
+                        <img class="footer__icons" 
+                            width="15" 
+                            height="15" 
+                            src="img/icons/ico-email.svg" 
+                            alt="Email"
+                        >
+                        coffeeplanet@mail.com
+                    </a>
+                    <a class="footer__links_s" href="#">
+                        <img class="footer__icons" 
+                            width="15" 
+                            height="14" 
+                            src="img/icons/ico-FB.svg" 
+                            alt="FB"
+                        >
+                    </a>
+                    <a class="footer__links_s" href="#">
+                        <img class="footer__icons" 
+                            width="26" 
+                            height="26" 
+                            src="img/icons/ico-Instagram.svg" 
+                            alt="Instagram"
+                        >
+                    </a>
+                </p>
+        </div>
+  
+        <div class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14085.348260431658!2d-82.5947162!3d28.0447311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ea5ae480fd9d%3A0xfebc9f0fbfcf420a!2zOTUzMiBXIExpbmViYXVnaCBBdmUsIFRhbXBhLCBGTCAzMzYyNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1599424829825!5m2!1sru!2sru" width="750" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    <p class="animate animate__fadeInUp copyright">
+        Copyright 2019 CoffeePlanet
+    </p>
+</footer>
+
+<div class="animate__fadeIn modal-overlay">
+    <div id="modal-form" class="animate__fadeIn modal modal-form">
+        <form action="#" method="POST"  class="modal__form form">
+            <h2 class="modal__h main-heading">
+                Book a table
+            </h2>
+            <p class="modal__text">
+                Leave your phone number and <br> we will contact you
+            </p>
+           <p>
+            <label for="POST-name" class="sr-only">
+                Name
+            </label>
+            <input 
+                id="POST-name" 
+                class="form-input"
+                type="text"
+                name="my-name"
+                placeholder="Name"
+            >
+           </p>
+           <p>
+            <label for="POST-name" class="sr-only">
+                Phone
+            </label>
+            <input 
+                id="POST-phone" 
+                class="form-input"
+                type="number"
+                name="my-phone"
+                placeholder="Phone"
+            >
+           </p>
+            <button class="form__submit" type="submit">
+                Send
+            </button>
+        </form>
+    </div>
+
+    <div id="modal-video" class="animate__fadeIn modal modal-video">
+        <div class="modal-video__container">
+            <iframe class="modal-video__iframe"
+                    width="560" 
+                    height="315"
+                    src="https://www.youtube.com/embed/umDcWY4-7yI" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>                
+            </iframe>
+        </div>
+    </div>
+
+    <div id="modal-alert" class="animate__fadeIn modal modal-alert">
+        <div class="modal-alert__Ok">
+
+        </div>
+        <h2 class="modal-alert__h main-heading">
+            Thank you !
+        </h2>
+        <p class="modal-alert__text">
+            We will contact you as soon as possible
+        </p>
+    </div>
+    <button aria-label="Close a model window" class="modal-overlay__close">
+    </button>
+</div>
+
+<div class="preloader">
+   {% include './svgo/coffee-cup.svg' %} 
+   <img class="preloader__logo" src="../../img/logo.png" alt="Logotype">
+</div>
+
+<script src="js/js.js"></script>
+
+</body>
+</html>

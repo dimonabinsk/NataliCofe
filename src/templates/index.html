@@ -1,0 +1,215 @@
+{% set title="CoffeePlanet" %}
+{% set lang="en" %}
+
+{% include 'parts/_head.html' %}
+
+{% include 'parts/_header.html' %}
+
+
+<aside class="banner"> 
+    <div class="wrapper">    
+        <p class="banner__text">More than simple coffee</p>
+        <nav class="banner__navigation"> 
+            <button data-href="#modal-form" class="btn-modal banner__btn banner__btn_colored ">
+                Book a table
+            </button>
+            <button data-href="#modal-video" class="btn-modal banner__btn banner__btn_trans">
+                Watch video
+            </button>
+        </nav>
+    </div>
+</aside>
+<main class="wrapper">
+    <h1 class="sr-only">Welcom to CoffePlanet</h1>
+    <section id="menu" class="menu">
+        <h2 class="animate animate__fadeInUp menu__h main-heading">
+          Make a choice  
+        </h2>
+        <p class="animate animate__fadeInUp menu__text ph">
+            We promis that you'll be deighted a cozy atmosphere and an exellent selection of drinks and snacks.
+        </p>
+        <ul class="animate animate__fadeInUp menu__tabs tabs">
+            <li class="tabs__item active">
+                <a href="#coffee" class="tabs__link">Coffe</a>
+            </li>
+            <li class="tabs__item">
+                <a href="#sweets" class="tabs__link">Sweets</a>
+            </li>
+            <li class="tabs__item">
+                <a href="#snacks" class="tabs__link">Snacks</a>
+            </li>            
+        </ul>
+        <ul class="animate animate__fadeInUp menu__content tabs-content ">
+            <li id="coffee" class="animate__fadeIn tabs-content__section active">
+                <ul class="tabs-content__wrap">
+                    <li class="product">
+                        <img src="img/products-coffee.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Blonde Cappuccino</h3>
+                        <p class="product__price">$5</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/products-coffee2.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Coconutmilk  Latte</h3>
+                        <p class="product__price">$3</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/products-coffee3.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Dark Chocolate Mocha</h3>
+                        <p class="product__price">$4</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/products-coffee4.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Oatmilk Honey Latte</h3>
+                        <p class="product__price">$3</p>
+                    </li>
+                </ul>
+            </li>
+            <li id="sweets" class="animate__fadeIn tabs-content__section">
+                <ul class="tabs-content__wrap">
+                    <li class="product">
+                        <img src="img/products-coffee.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Blonde Cappuccino</h3>
+                        <p class="product__price">$5</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/products-coffee2.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Coconutmilk  Latte</h3>
+                        <p class="product__price">$3</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/products-coffee3.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Dark Chocolate Mocha</h3>
+                        <p class="product__price">$4</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/products-coffee4.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Oatmilk Honey Latte</h3>
+                        <p class="product__price">$3</p>
+                    </li>
+                </ul>
+            </li>
+            <li id="snacks" class="animate__fadeIn tabs-content__section">
+                <ul class="tabs-content__wrap">
+                    <li class="product">
+                        <img src="img/products-coffee.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Blonde Cappuccino</h3>
+                        <p class="product__price">$5</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/products-coffee2.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Coconutmilk  Latte</h3>
+                        <p class="product__price">$3</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/products-coffee3.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Dark Chocolate Mocha</h3>
+                        <p class="product__price">$4</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/products-coffee4.jpg" alt="" class="product__pic">
+                        <h3 class="product__name">Oatmilk Honey Latte</h3>
+                        <p class="product__price">$3</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <article  id="about" class="about">         
+        <aside aria-label="Slider with photo cafe" class="animate animate__fadeInUp about__slider article-slider"> 
+            <figure class="animate animate__fadeInUp about__figure article-slider__container">
+                <div class="article-slider__slide">
+                    <img src="img/slider-slide1.jpg" alt="Photo of cafe" class="article__slider__img">
+                </div>
+                <div class="article-slider__slide">
+                    <img src="img/slider-slide2.jpg" alt="Photo of cafe" class="article__slider__img">
+                </div>
+            </figure>
+            <p class="animate animate__fadeInUp article-slider__btns">
+               <button aria-label="Previous slide" class="article-slider__btn article-slider__btn_prev">
+                    {% include './parts/svgo/ico-arrow-left.svg' %}
+               </button>
+               <button aria-label="Next slide" class="article-slider__btn article-slider__btn_next">
+                    {% include './parts/svgo/ico-arrow-left.svg' %}
+               </button>
+            </p>          
+        </aside>
+        
+        <h2 class="animate animate__fadeInUp main-heading about__h">
+             Welcom to CoffePlanet  
+        </h2>
+        <p class="animate animate__fadeInUp about__text">
+            The CoffeePlanet is open in Westchase! We are excited to introduce our Coffee Shop. If you crave great coffee, you’ll love knowing that we provide a real alternative to chains with handcrafted coffee and espresso drinks, a full tea bar, and real food options. 
+        </p> 
+        <p class="animate animate__fadeInUp about__text">
+            "We grind tou you"...our local daristas know that great taket espresso takes more than pushing a button. We work hand to deliver great taste while also providing knowledgeble service,perfect if you just want to try something new. 
+        </p> 
+        <p class="animate animate__fadeInUp about__text">
+            Our Cafe delivers way beyond the traditional coffe shop favorits(although we thihk yor homemade pastries are pretty good). We have traditional breakfast choices includinggs and pancakes,and plenty of healthy options (including gluten free,vegenarian and vegan). Our lunch offerings include a wice variet of salads, sandwiches and flatbreds. And as for the late nighters "we know you" appreciatehaving a spot for your dessert fix as well as a spiked coffee. 
+        </p>      
+        <button data-href="#modal-form" class="btn-modal animate animate__fadeInUp about__btn">Book a table in our cozy coffee shop
+        </button>   
+    </article>
+
+    <section class="features">
+        <h2 class="animate animate__fadeInUp main-heading features__h ">
+          Our features
+        </h2>
+        <p class="animate animate__fadeInUp short-text features__text ph">
+            Come to make sure . The CoffeePlanet at Westchase can actually deliver what we promise - a great coffee shop experience.
+        </p>
+        <ul class="animate animate__fadeInUp features__list">
+            <li class="features__items features__items_drinks">
+                Coffee and tea
+            </li>
+            <li class="features__items features__items_sweets">
+                Tasty sweets
+            </li>
+            <li class="features__items features__items_wifi">
+                Free WIFI
+            </li>
+            <li class="features__items features__items_seats">
+                Comfortable seats
+            </li>
+        </ul>           
+    </section>
+
+    <section class="reviews">
+        <h2 class="animate animate__fadeInUp main-heading reviews_h">
+          Our happy visitor say:  
+        </h2>
+        <div class="animate animate__fadeInUp reviews__visitor "> 
+        <article aria-label="Visitor reviews" class="reviews__card ">
+            <img class="reviews__picture" src="img/Эллипс2.jpg" alt=" Photo visitor">
+            <h3 class="reviews__name">
+                Dennis Simpson
+            </h3>                 
+            <p class="reviews__text">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id maiores enim necessitatibus. Veniam officiis rem omnis repudiandae vero, error atque veritatis non, illo voluptate illum?
+            </p>
+            <time class="reviews__time" datetime="2018-05-12">30.04.2019</time>    
+        </article>
+        <article aria-label="Visitor reviews" class="reviews__card">
+            <img class="reviews__picture" src="img/Эллипс1.jpg" alt="Photo visitor">
+            <h3 class="reviews__name">
+                Andrew Smith
+            </h3>
+            <p class="reviews__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis delectus voluptatibus maiores ipsa dignissimos accusantium tenetur consequuntur voluptates, iste illo, aperiam quos at aliquid tempore.
+            </p>
+            <time class="reviews__time" datetime="2018-05-12">24.08.2018</time>        
+        </article>
+        <article aria-label="Visitor reviews" class="reviews__card">
+            <img class="reviews__picture" src="img/Эллипс3.jpg" alt="Photo visitor">                
+            <h3 class="reviews__name">
+                George Cuper
+            </h3>                   
+            <p class="reviews__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum unde quae, iste deserunt, officiis consequuntur saepe beatae aut ullam delectus molestiae esse iusto commodi itaque.
+            </p>
+            <time class="reviews__time" datetime="2018-05-12">12.05.2018</time>                    
+        </article>
+        </div>
+    </section>
+</main>
+ 
+{% include 'parts/_foot.html' %}
