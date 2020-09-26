@@ -137,7 +137,7 @@ tabLinks.forEach( (tabLink) => {
     tabLink.addEventListener('click', tabsToggle);
 });
 
-let header = document.querySelector('main-header');
+let header = document.querySelector('.main-header');
 function stickyHeader() {
     // console.log(1);
     if(window.scrollY > 500){
@@ -150,11 +150,12 @@ function stickyHeader() {
 function throttle( func, time) {
     let isThrottled = false;
     return function(){
-        if( isThrottled ) return;
-        let ctx = this;
-        let args = arguments;        
-        func.apply(ctx, args);
-        isThrottled = true;
+        if( isThrottled ) 
+            return;
+            let ctx = this;
+            let args = arguments;        
+            func.apply(ctx, args);
+            isThrottled = true;
         setTimeout(()=>{
             isThrottled = false;
          }, time);
